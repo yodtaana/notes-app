@@ -1,75 +1,59 @@
-/* App.css */
-
-.App {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+.form-container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
 
-.App-header {
+form {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5vh 2vw;
-  border-bottom: 1px solid #696969;
+  flex-direction: column;
 }
 
-.header-text {
+label {
+  margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1.5rem;
 }
 
-.add-note-btn {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1.5px solid #000000;
-  padding: 2vh 0.5vw;
+input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #585858;
+  color: #fff;
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
-.add-note-btn::before {
-  content: "➕"; 
-  margin-right: 0.5vw;
+button:hover {
+  background-color: #0056b3;
 }
 
-.content-area {
-  flex-grow: 1;
-  background-color: #D3D3D3;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 1rem;
-  flex-direction: row;
-  align-content: flex-start;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.note-preview {
-  height: 29vh;
-  width: calc(33.33% - 1rem);
-  background-color: yellow;
-  padding: 1rem;
-  margin: 0.5rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.link {
+  text-align: center;
+  margin-top: 10px;
 }
 
-.note-preview h3 {
-  margin: 0;
+.link a {
+  color: #1f5fea;
+  text-decoration: none;
 }
 
-.note-preview p {
-  margin: 0;
-  flex-grow: 1;
-}
-
-@media (max-width: 900px) {
-  .note-preview {
-    width: calc(50% - 1rem);
-  }
+.link a:hover {
+  text-decoration: underline;
 }

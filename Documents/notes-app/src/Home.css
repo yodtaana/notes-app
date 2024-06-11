@@ -1,0 +1,78 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.Home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vh 2vw;
+  border-bottom: 1px solid #696969;
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-note-btn, .sign-out-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1.5px solid #000000;
+  padding: 1vh 1vw;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.add-note-btn::before { 
+  margin-right: 0.5vw;
+}
+
+.content-area {
+  flex-grow: 1;
+  background-color: #D3D3D3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.note-preview {
+  height: 29vh;
+  width: calc(33.33% - 1rem);
+  background-color: yellow;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-preview h3 {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.note-preview p {
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 900px) {
+  .note-preview {
+    width: calc(50% - 1rem);
+  }
+}
